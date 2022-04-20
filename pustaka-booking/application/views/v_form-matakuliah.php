@@ -7,28 +7,31 @@
     <title>Form Mata Kuliah</title>
 </head>
 <body>
+    
     <center>
     <form action="http://localhost/TugasWebProgramming_DanielRahardja_17190521/pustaka-booking/matakuliah/cetak" method="post">
         <table>
             <tr>
-                <th colspan=  "3">
+                <th colspan=  "4">
                     FORM INPUT MATA KULIAH
                 </th>
             </tr>
             <tr>
-                <th colspan="3">
+                <th colspan="4">
                     <hr>
                 </th>
             </tr>
             <tr>
                 <td>Kode Matkul</td>
                 <td>:</td>
-                <td><input type="text" name="kode" id="kode"></td>
+                <td><input type="text" name="kode" id="kode" value="<?php echo set_value('kode'); ?>"></td>
+                <td><?php echo form_error('kode'); ?></td>
             </tr>
             <tr>
                 <td>Nama Matkul</td>
                 <td>:</td>
-                <td><input type="text" name="nama" id="nama"></td>
+                <td><input type="text" name="nama" id="nama" value="<?php echo set_value('nama'); ?>"></td>
+                <td><?php echo form_error('nama'); ?></td>
             </tr>
             <tr>
                 <td>SKS</td>
@@ -41,9 +44,10 @@
                         <option value="4">4</option>
                     </select>
                 </td>
+                <td><?php echo form_error('sks'); ?></td>
             </tr>
             <tr>
-                <td colspan="3" align="center">
+                <td colspan="4" align="center">
                     <input type="submit" value="Submit">
                 </td>
             </tr>
