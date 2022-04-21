@@ -26,4 +26,11 @@ class Web extends CI_Controller{
         $this->load->view('v_user',$data);
         $this->load->view('v_footer',$data);
     }
+    public function tampilBuku(){
+        $data['judul_buku'] = "Halaman Buku";
+        $data['buku']= $this->M_Buku->getBuku()->result_array();
+        $this->load->view('v_header',$data);
+        $this->load->view('v_buku',$data);
+        $this->load->view('v_footer',$data);
+    }
 }
