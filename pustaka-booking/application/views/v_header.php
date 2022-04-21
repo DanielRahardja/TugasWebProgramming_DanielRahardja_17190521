@@ -18,6 +18,8 @@
                 <ul>
                     <li><a href="<?php echo base_url().'web' ?>">Home</a></li>
                     <li><a href="<?php echo base_url().'web/about' ?>">About</a></li>
+                    <li><a href="<?php echo base_url().'web/tampilUser' ?>">User</a></li>
+                    <li><a href="<?php echo base_url().'' ?>">Login</a></li>
                 </ul>
             </nav>
             <div class="clear"></div>
